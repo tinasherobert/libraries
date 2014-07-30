@@ -171,7 +171,7 @@ public abstract class FadingActionBarHelperBase {
             mActionBarBackgroundDrawable = activity.getResources().getDrawable(mActionBarBackgroundResId);
         }
         setActionBarBackgroundDrawable(mActionBarBackgroundDrawable);
-        if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.JELLY_BEAN) {
+        if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.BASE) {
             mActionBarBackgroundDrawable.setCallback(mDrawableCallback);
         }
         mActionBarBackgroundDrawable.setAlpha(0);
